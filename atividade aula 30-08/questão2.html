@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Atividade 3</title>
+    <meta name="author"
+        content="Eduardo Lopes de Cerqueira, João Bruno Reis Carvalho dos Santos, Taun Gramacho dos Santos">
+    <meta name="description" content="Atividades sobre CSS">
+    <meta name="keywords" content="web, 200027356, 200026858">
+</head>
+<style>
+    .input {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        color: rgb(248, 248, 248);
+        background-color: rgb(62, 131, 116);
+        align-items: center;
+    }
+
+    .label{
+        color: blueviolet;
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #form{       
+        background-image: url("https://ichef.bbci.co.uk/news/640/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flexbox;
+        width: 700px; 
+        margin-left: auto;
+        margin-right: auto; 
+    }
+</style>
+
+<body>
+
+    <form action="" id="form">
+        <div class="row">
+            <label class="label" for="input1">insira seu nome</label>
+            <input type="text" class="input" id="input1">
+        </div>
+        <br>
+        <div class="row">
+            <label class="label" for="input2">insira sua senha</label>
+            <input type="text" class="input" id="input2">
+        </div>
+        <br>
+        <div class="row">     
+           <label class="label" for="tipoFuncionario">informe seu vínculo</label>
+            <select class="input"   name="tipoFuncionario" id="tipoFuncionario">
+                <option value="" selected></option>
+                <option value="aluno">aluno</option>
+                <option value="professor">professor</option>
+                <option value="coordenador">coordenador</option>
+            </select>
+        </div>
+        <br>
+        <div class="row">
+            <label  class="label" for="textArea">informações adcionais</label>
+            <textarea class="input"  name="textArea" id="textArea" cols="20" rows="10"></textarea>
+        </div>
+        <button type="submit" style="color: blue; background-color: black;">ENVIAR INFORMAÇÕES</button>
+    </form>
+
+</body>
+
+</html>
